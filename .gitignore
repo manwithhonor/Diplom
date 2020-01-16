@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Prerequisites
 *.d
 
@@ -6,11 +7,95 @@
 *.lo
 *.o
 *.obj
+=======
+
+#ignore thumbnails created by windows
+Thumbs.db
+#Ignore files build by Visual Studio
+*.obj
+*.exe
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+*.dll
+*.lib
+*.sbr
+
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+>>>>>>> first commit
 
 # Precompiled Headers
 *.gch
 *.pch
 
+<<<<<<< HEAD
+=======
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+>>>>>>> first commit
 # Compiled Dynamic libraries
 *.so
 *.dylib
@@ -24,9 +109,13 @@
 *.lai
 *.la
 *.a
+<<<<<<< HEAD
 *.lib
 
 # Executables
 *.exe
 *.out
 *.app
+=======
+*.lib
+>>>>>>> first commit
