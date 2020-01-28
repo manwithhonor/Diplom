@@ -157,6 +157,7 @@ void UDPHS_Handler(void) __attribute__ ((weak, alias("Dummy_Handler")));
 /**
  * \brief Default interrupt handler for unused IRQs.
  */
+
 void Dummy_Handler(void)
 {
 	while (1) {

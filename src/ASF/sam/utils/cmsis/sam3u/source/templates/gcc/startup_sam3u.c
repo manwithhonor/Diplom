@@ -34,12 +34,12 @@
  * Support and FAQ: visit <a href="https://www.microchip.com/support/">Microchip Support</a>
  */
 
-//#include "exceptions.h"
 #include "sam3u.h"
 #include "sam3u4e.h"
 #include "system_sam3u.h"
 #include "exceptions.h"
 #include "smc.h"
+
 
 /* Initialize segments */
 extern uint32_t _sfixed;
@@ -57,10 +57,7 @@ int main(void);
 /** \endcond */
 
 void __libc_init_array(void);
-
 void SMC_Handler        ( void );
-
-
 /* Exception Table */
 __attribute__ ((section(".vectors")))
 IntFunc exception_table[] = {

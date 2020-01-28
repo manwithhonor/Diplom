@@ -38,9 +38,7 @@
 #include "sysclk.h"
 #include "udd.h"
 #include "udphs_device.h"
-#include <asf.h>
 #include <string.h>
-//#include "component_udphs.h"
 
 #ifndef UDD_NO_SLEEP_MGR
 #  include "sleep.h"

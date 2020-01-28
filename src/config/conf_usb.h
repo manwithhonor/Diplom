@@ -59,8 +59,8 @@
 // (USB_CONFIG_ATTR_REMOTE_WAKEUP|USB_CONFIG_ATTR_BUS_POWERED)
 
 //! USB Device string definitions (Optional)
-#define  USB_DEVICE_MANUFACTURE_NAME      "sharapov"
-#define  USB_DEVICE_PRODUCT_NAME          "grad_proj"
+#define  USB_DEVICE_MANUFACTURE_NAME      "Sharapov Roman"
+#define  USB_DEVICE_PRODUCT_NAME          "Diplom Project"
 // #define  USB_DEVICE_SERIAL_NAME           "12...EF"
 
 

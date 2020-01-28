@@ -59,11 +59,8 @@
 // From module: Delay routines
 #include <delay.h>
 
-// From module: EEPROM AT24CXX
-#include <at24cxx.h>
-
-// From module: FIFO - First-In-First-Out circular buffer
-#include <fifo.h>
+// From module: GPBR - General Purpose Backup Register
+#include <gpbr.h>
 
 // From module: GPIO - General purpose Input/Output
 #include <gpio.h>
@@ -76,12 +73,6 @@
 
 // From module: Interrupt management - SAM implementation
 #include <interrupt.h>
-
-// From module: Memory Control Access Interface
-#include <ctrl_access.h>
-
-// From module: PDC - Peripheral DMA Controller Example
-#include <pdc.h>
 
 // From module: PIO - Parallel Input/Output Controller
 #include <pio.h>
@@ -108,24 +99,6 @@
 
 // From module: System Clock Control - SAM3U implementation
 #include <sysclk.h>
-
-// From module: TWI - Two-Wire Interface - SAM implementation
-#include <sam_twi/twi_master.h>
-#include <sam_twi/twi_slave.h>
-#include <twi_master.h>
-#include <twi_slave.h>
-
-// From module: TWI - Two-wire Interface
-#include <twi.h>
-
-// From module: UART - Univ. Async Rec/Trans
-#include <uart.h>
-
-// From module: USART - Serial interface - SAM implementation for devices with both UART and USART
-#include <serial.h>
-
-// From module: USART - Univ. Syn Async Rec/Trans
-#include <usart.h>
 
 // From module: USB CDC Protocol
 #include <usb_protocol_cdc.h>

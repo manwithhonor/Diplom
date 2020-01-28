@@ -46,10 +46,8 @@
 #include "ioport.h"
 #include "pio.h"
 #include "pio_handler.h"
-//#include "component_udphs.h"
 #include <asf.h>
 #include "component/component_udphs.h"
-//#include "src/ASF/sam/utils/cmsis/sam3u/include/component/component_udphs.h"
 
 #define UDPHS_EPTSETSTA_TX_PK_RDY (0x1u << 11) /**< \brief (UDPHS_EPTSETSTA) TX Packet Ready Set */
 #define UDPHS_EPTSETSTA_KILL_BANK (0x1u << 9) /**< \brief (UDPHS_EPTSETSTA) KILL Bank Set (for IN Endpoint) */
@@ -61,7 +59,6 @@
 #define UDPHS_EPTCTL_RX_BK_RDY (0x1u << 9) /**< \brief (UDPHS_EPTCTL) Received OUT Data Interrupt Enabled */
 #define UDPHS_EPTCTL_TX_PK_RDY (0x1u << 11) /**< \brief (UDPHS_EPTCTL) TX Packet Ready/Transaction Error Interrupt Enabled */
 #define UDPHS_EPTCLRSTA_RX_BK_RDY (0x1u << 9) /**< \brief (UDPHS_EPTCLRSTA) Received OUT Data Clear */
-
 
 /// @cond 0
 /**INDENT-OFF**/
