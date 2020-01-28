@@ -23,27 +23,44 @@
 using namespace std;
 using std::string;
 
-void systemStart();
-void blinkGreen();
-void blinkRed();
-void ledTest();
-void textTest();
-void getNAdresses(string userMasterPubKey, int amountOfChildKeys);
-void getNChildKey(string userMasterPubKey, int amountOfChildKeys);
-void genMasterKeys();
-void signTransaction();
+/*TO DO: change remaining API for compliance with library*/
+
+void systemStart(); // initialization of system
+void blinkGreen(); // blinking green LED
+void blinkRed(); //blinking red LED
+void ledTest(); //blinking LED by command from terminal from PC
+void textTest(); // send end receive text
+void getNAdresses(string userMasterPubKey, int amountOfChildKeys); // get adresses built on child keys
+void getNChildKey(string userMasterPubKey, int amountOfChildKeys); // get child keys
+void genMasterKeys(); // create master key
+void signTransaction(); // sign transaction and send it's text to PC before signing
 
 int main (void){
 	systemStart();
 	char *msg;
 	
 	
-	while (1)
-	{	//getNAdresses
-		// printAddresses("xpub6BoiLSuHTDytgQejDauyXkBqQ4xTw2tSFKgkHfmZky7jDQQecUKwbFocxZXSJMCSp8gFNBbD9Squ3etZbJkE2qQqVBrypLjWJaWUNmHh3LT");
+	while (1)	{	 
+				
+		// if only i use this function - system is connect to PC withoiut problem
+		//ledTest();
 		
 		
-			 			
+		// if  i use this block of code - system doesn't connect to PC  
+		  switch(udi_cdc_getc()){
+			  case '1':
+			  void genMasterKeys();
+			  break;
+			  
+			  case '2':
+			  void signTransaction();
+			  break;
+			  
+			  default:
+			  msg="wrong\r\n";
+			  udi_cdc_write_buf(msg, strlen(msg)*sizeof(*msg));
+			  break;
+		  }
 	}
 }
 
